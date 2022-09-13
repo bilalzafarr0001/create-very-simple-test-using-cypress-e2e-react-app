@@ -1,11 +1,8 @@
 version: 2.1
 orbs:
-  #             ↱ official orb name in the registry (org + name)
-  e2eCypress: cypress-io/cypress@2
-  #  ↳ your local name for the imported orb
+  cypress: cypress-io/cypress@2
 workflows:
   build:
     jobs:
-      #   ↱ local orb name
-      - e2eCypress/run
-      #             ↳ job "run" defined in the orb
+      - cypress/run:
+          executor: cypress/base-14
