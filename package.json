@@ -10,7 +10,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "npx cypress run",
     "eject": "react-scripts eject",
     "cy:run": "npx cypress run --record --key e36f71fa-ea76-4906-b69a-e448e44a3ac3",
     "cy:browser": "npm run cy:run -- --browser firefox --group Firefox --ci-build-id 3 & npm run cy:run -- --browser chrome --group Chrome --ci-build-id 3",
