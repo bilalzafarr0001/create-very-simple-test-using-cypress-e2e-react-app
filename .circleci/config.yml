@@ -4,6 +4,6 @@
 workflows:
   build:
     jobs:
-      - cypress:
+      - cypress/run:
           yarn: true
         
