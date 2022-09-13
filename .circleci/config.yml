@@ -2,8 +2,8 @@
  orbs:
    cypress:cypress-io@1
 workflows:
-    build:
-       jobs:
-         - cypress/run:
+  build:
+    jobs:
+      - cypress/run:
           yarn: true
         
