@@ -2,7 +2,7 @@ pipeline{
     agent{
         docker{
             image 'cypress/browsers:node16.14.2-slim-chrome100-ff99-edge'
-            args '-r root:root'
+            args '-u root:root'
         }
     }
 
@@ -14,14 +14,13 @@ stages{
             sh "npm install"
         }
     }
-} 
-
-stages{
-    stage('Build and test'){
+     stage('Build and test'){
         steps{
             sh "npm run cy:run"
         }
     }
-}
+} 
+
+ 
 
 }
