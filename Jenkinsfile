@@ -14,6 +14,13 @@ stages{
             sh "npm install"
         }
     }
+
+    stage('Download the dependencies'){
+        steps{
+            sh "npm install cypress"
+        }
+    }
+
      stage('Build and test'){
         steps{
             sh "npm run cy:run"
