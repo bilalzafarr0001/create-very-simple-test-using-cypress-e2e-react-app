@@ -1,5 +1,3 @@
-
-  
 FROM cypress/browsers:node16.14.2-slim-chrome100-ff99-edge
   RUN curl -fsSLO https://get.docker.com/builds/Linux/x86_64/docker-17.04.0-ce.tgz \
   && tar xzvf docker-17.04.0-ce.tgz \
