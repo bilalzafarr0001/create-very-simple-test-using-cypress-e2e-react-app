@@ -9,6 +9,10 @@ pipeline{
 
 
 stages{
+     stage('Initialize'){
+        def dockerHome = tool 'myDocker'
+        env.PATH = "${dockerHome}/bin:${env.PATH}"
+    }
     stage('Download the dependencies'){
         steps{
             sh "npm install"
