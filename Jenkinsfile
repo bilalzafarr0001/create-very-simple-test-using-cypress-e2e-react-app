@@ -12,15 +12,11 @@ stages{
      
     stage('Download the dependencies'){
         steps{
-            sh "npm install"
+            sh "yarn install"
         }
     }
 
-    stage('Download the cypress'){
-        steps{
-            sh "npm install cypress"
-        }
-    }
+   
 
      stage('Build and test'){
         steps{
