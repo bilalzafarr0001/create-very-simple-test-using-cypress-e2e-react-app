@@ -1,0 +1,7 @@
+image : cypress/browsers:node16.14.2-slim-chrome100-ff99-edge
+
+test:
+     stage: test
+     script: 
+         - npm install 
+         - npm run cy:run
