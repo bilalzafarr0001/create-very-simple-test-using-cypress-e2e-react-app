@@ -15,7 +15,7 @@ stages{
         }
     }
 
-    stage('Download the dependencies'){
+    stage('Download the cypress'){
         steps{
             sh "npm install cypress"
         }
