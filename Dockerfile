@@ -12,5 +12,5 @@ RUN npm install -g yarn@latest --force
 RUN npm install -g npm@8.19.1
 
 RUN yarn install
-RUN yarn run cypress install 
-RUN ["npm","run","cypress"]
+
+RUN ["npm","run","cy:run"]
