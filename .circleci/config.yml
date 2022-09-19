@@ -8,5 +8,5 @@ orbs:
 workflows:
   build:
     jobs:
-      - cypress/run
-            store_artifacts: true
+      - cypress/run:
+          store_artifacts: true
