@@ -9,6 +9,8 @@ workflows:
           requires:
             - cypress/install
           store_artifacts: true
+          command: npm run cy:run
+          record: true
           parallel: true
           parallelism: 2
           group: 2 machines
